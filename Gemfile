@@ -33,6 +33,13 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 group :development, :test do
   gem 'pry'
+  #RSpec é uma ferramenta de teste Ruby para testar o código Ruby
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  #A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
+  #Simple one-liner tests for common Rails functionality
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 group :development do
