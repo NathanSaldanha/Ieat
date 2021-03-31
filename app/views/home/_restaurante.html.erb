@@ -1,0 +1,18 @@
+<p>Seus produtos, <%= current_user.restaurante.name rescue nil%></p>
+<table>
+  <thead>
+  <tr>
+    <th>Nome</th>
+    <th>Valor</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% current_user.restaurante.products.each do |product|%>
+    <tr>
+      <td><%=product.name rescue nil%></td>
+      <td><%=product.valor rescue nil%></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

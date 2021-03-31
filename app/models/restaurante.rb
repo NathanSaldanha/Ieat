@@ -1,7 +1,7 @@
 class Restaurante < ApplicationRecord
   has_many :products
+  belongs_to :user
 
-  validates :name, presence: true
   def total_producto
     products.count
   end
