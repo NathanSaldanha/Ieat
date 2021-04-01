@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :orders, only: [:create]
   resources :products
   resources :restaurantes
   devise_for :users
